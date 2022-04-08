@@ -76,7 +76,7 @@
 ## Install and Run (Tested in ros melodic)
 * Building package
     
-      sudo apt-get install libeigen3-dev
+      sudo apt-get install libeigen3-dev (Linear Algebra Pack)
 
       mkdir catkin_ws
       cd catkin_ws
