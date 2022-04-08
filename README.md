@@ -10,6 +10,7 @@
 ### Mapping
 * Mapping has been done using Octomap  
 * Fixed size euclidean distance map is computed using EDT3D Library (https://github.com/OctoMap/octomap/tree/devel/dynamicEDT3D) for collision check.
+* The simplest Distance Transform, receives as input a binary image as Figure 1, (the pixels are either 0 or 1), and outputs a distance map. This distance map has the same dimensions of the input image and each pixel contains for example, the Euclidean distance, to the closest obstacle pixel (e.g. border pixel).
 * Fixed Size EDT map gets updated around the drone after it travels a threshold distance from the previous location at which map was updated (here threshold is 1 metres).
 * Point cloud from the RGBD sensor (RealSense D415 and D455 were tested) is downsampled using pcl_ros
 * Zero mean Gaussian noise is added on the point cloud using pcl library
